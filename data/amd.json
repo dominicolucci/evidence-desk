@@ -1,0 +1,221 @@
+{
+  "company": {
+    "ticker": "AMD",
+    "name": "Advanced Micro Devices",
+    "exchange": "NASDAQ"
+  },
+  "query": "Analyze AMD's business quality and competitive position",
+  "title": "AMD business quality",
+  "eyebrow": "Public equity · Long-only initiation",
+  "dataCutoff": "13 Aug 2026",
+  "duration": "4m 18s",
+  "qualityScore": 84,
+  "qualitySummary": "12 claims · 3 primary sources",
+  "steps": [
+    { "label": "Scope the question", "detail": "Business quality + competitive position" },
+    { "label": "Gather primary evidence", "detail": "10-Q, 10-K, earnings release" },
+    { "label": "Normalize & calculate", "detail": "Mix, growth, margin, commitments" },
+    { "label": "Challenge the thesis", "detail": "Dilution, concentration, execution risk" },
+    { "label": "Draft the report", "detail": "Claims, confidence, open questions" }
+  ],
+  "thesis": {
+    "posture": "Preliminary initiation",
+    "evidenceConfidence": 84,
+    "headline": "Business quality is improving. The return profile still needs proof.",
+    "score": 7.6,
+    "scoreLabel": "Business quality",
+    "leadCopy": "AMD has crossed an important mix threshold: Data Center is now the majority of revenue and the clearest source of operating leverage. The next question is harder—whether rack-scale AI deployments convert that growth into durable returns after commitments, customer incentives and execution costs.",
+    "metrics": [
+      { "label": "Q2 revenue", "value": "$11.5B", "note": "+50% YoY", "noteTone": "positive" },
+      { "label": "Data Center mix", "value": "58%", "note": "+16 pts YoY", "noteTone": "positive" },
+      { "label": "GAAP op. margin", "value": "17%", "note": "+19 pts YoY", "noteTone": "positive" },
+      { "label": "Net cash", "value": "$9.8B", "note": "Derived from S3", "noteTone": "neutral" }
+    ],
+    "primarySupport": ["S1", "S3"]
+  },
+  "hinges": [
+    {
+      "title": "AI systems scale beyond isolated wins",
+      "detail": "Helios and MI450 deployments broaden across hyperscalers."
+    },
+    {
+      "title": "Growth converts into cash returns",
+      "detail": "Margins and cash generation outrun capacity commitments."
+    },
+    {
+      "title": "Software lowers switching friction",
+      "detail": "ROCm adoption reduces the ecosystem gap with CUDA."
+    }
+  ],
+  "debate": {
+    "title": "Growth engine vs. financed growth",
+    "evidenceCount": 6,
+    "for": {
+      "headline": "Data Center revenue +107%",
+      "detail": "Mix, growth and segment profit all moved sharply higher in Q2."
+    },
+    "against": {
+      "headline": "$30.3B commitments",
+      "detail": "Future obligations and warrant dilution complicate simple revenue-growth framing."
+    },
+    "linkClaimId": "C3"
+  },
+  "risks": [
+    {
+      "title": "Deployment economics",
+      "detail": "Large commitments may compress after-financing returns.",
+      "severity": "high",
+      "severityLabel": "High"
+    },
+    {
+      "title": "Customer concentration",
+      "detail": "Large deployments could increase negotiating power.",
+      "severity": "med",
+      "severityLabel": "Medium"
+    },
+    {
+      "title": "Ecosystem execution",
+      "detail": "Hardware gains may not translate without software adoption.",
+      "severity": "med",
+      "severityLabel": "Medium"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "title": "Data Center is now AMD's primary growth engine",
+      "confidence": 92,
+      "label": "Strongly supported",
+      "support": 3,
+      "challenge": 1,
+      "summary": "Q2 Data Center revenue reached $6.7B, or 58% of company revenue, and grew 107% year over year. The segment also produced $2.1B of operating income.",
+      "evidence": [
+        { "source": "S1", "kind": "Reported fact", "text": "$6.7B Q2 Data Center revenue; +107% YoY.", "tone": "fact" },
+        { "source": "S1", "kind": "Derived", "text": "58.2% of consolidated Q2 revenue.", "tone": "derived" },
+        { "source": "S2", "kind": "Reported fact", "text": "$16.6B FY2025 Data Center revenue; +32% YoY.", "tone": "fact" },
+        { "source": "S1", "kind": "Challenge", "text": "Prior-year profit comparison includes MI308 export-control charges.", "tone": "risk" }
+      ]
+    },
+    {
+      "id": "C2",
+      "title": "AMD has broadened from chips toward rack-scale AI systems",
+      "confidence": 76,
+      "label": "Supported, execution pending",
+      "support": 3,
+      "challenge": 2,
+      "summary": "EPYC, Instinct, networking and the Helios rack platform create a broader systems proposition. The strategic direction is clear; proof of scaled deployment and durable economics is still developing.",
+      "evidence": [
+        { "source": "S2", "kind": "Reported fact", "text": "Helios combines CPUs, GPUs and networking in a rack-scale platform.", "tone": "fact" },
+        { "source": "S2", "kind": "Reported fact", "text": "ZT design capabilities were retained after the manufacturing sale.", "tone": "fact" },
+        { "source": "S1", "kind": "Management claim", "text": "Helios is beginning to ramp in the second half of 2026.", "tone": "claim" },
+        { "source": "S3", "kind": "Challenge", "text": "Deployment visibility does not yet prove normalized returns.", "tone": "risk" }
+      ]
+    },
+    {
+      "id": "C3",
+      "title": "Growth quality must be judged against commitments and dilution",
+      "confidence": 86,
+      "label": "Material underwriting gate",
+      "support": 2,
+      "challenge": 0,
+      "summary": "The balance sheet is liquid, but future purchase, lease and investment commitments are large. Customer warrants introduce potential dilution tied to deployment milestones.",
+      "evidence": [
+        { "source": "S3", "kind": "Reported fact", "text": "$30.3B of unconditional commitments at quarter end.", "tone": "fact" },
+        { "source": "S3", "kind": "Reported fact", "text": "Customer warrants cover up to 320M shares in aggregate.", "tone": "fact" },
+        { "source": "S3", "kind": "Reported fact", "text": "$13.1B cash and short-term investments; $3.3B debt.", "tone": "fact" },
+        { "source": "S3", "kind": "Open question", "text": "What are after-financing cash returns by deployment cohort?", "tone": "open" }
+      ]
+    }
+  ],
+  "segments": [
+    { "name": "Data Center", "value": 6.718, "growth": 107, "color": "var(--accent)" },
+    { "name": "Client", "value": 3.062, "growth": 23, "color": "var(--teal)" },
+    { "name": "Embedded", "value": 0.977, "growth": 19, "color": "var(--sand)" },
+    { "name": "Gaming", "value": 0.779, "growth": -31, "color": "var(--coral)" }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "type": "Primary filing",
+      "title": "AMD Q2 2026 earnings release",
+      "date": "Aug 4, 2026",
+      "url": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results"
+    },
+    {
+      "id": "S2",
+      "type": "Primary filing",
+      "title": "AMD FY2025 Form 10-K",
+      "date": "Feb 3, 2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/amd-20251227.htm"
+    },
+    {
+      "id": "S3",
+      "type": "Primary filing",
+      "title": "AMD Q2 2026 Form 10-Q",
+      "date": "Aug 5, 2026",
+      "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000123/amd-20260627.htm"
+    }
+  ],
+  "scorecard": [
+    { "label": "Growth durability", "score": 8.2 },
+    { "label": "Operating leverage", "score": 7.8 },
+    { "label": "Balance sheet", "score": 8.6 },
+    { "label": "Competitive moat", "score": 6.8 },
+    { "label": "Capital efficiency", "score": 6.1, "caution": true }
+  ],
+  "capital": {
+    "heading": "Liquidity is strong; obligations are larger",
+    "flag": "Needs modeling",
+    "items": [
+      { "label": "Cash + short-term investments", "value": "$13.1B" },
+      { "label": "Debt obligations", "value": "$3.3B" },
+      {
+        "label": "Unconditional commitments",
+        "value": "$30.3B",
+        "note": "$17.4B due during the remainder of FY2026",
+        "wide": true
+      }
+    ],
+    "openQuestion": "What are normalized free cash flow and returns on invested capacity after purchase commitments, future leases and customer warrant dilution?"
+  },
+  "report": {
+    "date": "13 August 2026",
+    "exchange": "NASDAQ · AMD",
+    "subtitle": "Preliminary initiation · Business quality and competitive position",
+    "rating": "WATCHLIST",
+    "netRead": "AMD’s business quality is improving as Data Center becomes the primary revenue and profit engine. A positive ownership conclusion still requires proof that rack-scale AI growth produces durable after-financing cash returns.",
+    "thesisPoints": [
+      {
+        "title": "Data Center crossed the mix threshold.",
+        "detail": "It represented 58% of Q2 revenue and grew 107% year over year."
+      },
+      {
+        "title": "The product scope is expanding.",
+        "detail": "AMD is moving from components toward CPUs, GPUs, networking and rack-scale systems."
+      },
+      {
+        "title": "Capital efficiency is the decision gate.",
+        "detail": "Commitments, future leases and warrant dilution must be modeled against normalized cash returns."
+      }
+    ],
+    "disconfirmers": [
+      "Helios adoption remains concentrated or slower than expected.",
+      "Customer incentives rise faster than incremental gross profit.",
+      "ROCm adoption fails to reduce ecosystem switching friction.",
+      "Capacity commitments depress free cash flow through the cycle."
+    ],
+    "evidencePosture": "This is a research-grade, preliminary initiation based on AMD’s FY2025 Form 10-K, Q2 2026 earnings release and Q2 2026 Form 10-Q. Current consensus estimates, ownership data and a full valuation model are not yet included; no target price or investment recommendation is implied.",
+    "footnotes": "Sources: [S1] AMD Q2 2026 earnings release; [S2] AMD FY2025 Form 10-K; [S3] AMD Q2 2026 Form 10-Q. Reported facts, derived calculations, management claims and analyst interpretations are distinguished in the evidence map.",
+    "outline": [
+      { "label": "Executive read", "done": true },
+      { "label": "Thesis & debates", "done": true },
+      { "label": "Business quality", "done": true },
+      { "label": "Competitive position", "done": true },
+      { "label": "Risks & disconfirmers", "done": true },
+      { "label": "Valuation framework", "done": false, "note": "Source gap" },
+      { "label": "Peer comparison", "done": false, "note": "Source gap" }
+    ],
+    "nextDataRequest": "Next data request: current consensus, historical valuation and share-count bridge."
+  },
+  "briefText": "AMD research posture — preliminary initiation\n\nNet read: AMD's business quality is improving as Data Center becomes the primary revenue and profit engine. The central underwriting question is whether rack-scale AI growth produces durable after-financing returns after commitments and potential dilution.\n\nEvidence confidence: Research-grade. Data cut-off: August 13, 2026."
+}
